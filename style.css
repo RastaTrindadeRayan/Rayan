@@ -31,7 +31,7 @@ padding: 00px 00px 00px 00px;
 }
 body {
   background: var(--bg-url)no-repeat top center/cover;
-  height: 100vh;
+  height: 150vh;
 }
 body * {
   font-family: "inter", sans-serif;
@@ -40,7 +40,7 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 56px auto 0px;
+  margin: auto;
   padding: 0 24px;
   
  
@@ -92,6 +92,7 @@ transition: all 1s;
   z-index: 1;
   transform: translateY(-50%);
  border: 1px solid var(--stroke-color);
+ animation: slide-left 0.2s;
   transition: all 0.5s;
 }
 .Light #switch button{
@@ -109,6 +110,7 @@ transition: all 1s;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
+  animation: slide-right 0.2s;
 }
 
 ul {
@@ -116,8 +118,8 @@ ul {
   list-style:none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  gap: 16px;
+  padding: 24px 0;
 }
 ul li a  {
 
@@ -125,14 +127,16 @@ ul li a  {
 align-items: center;
 justify-content: center;
 
-padding: 0px 20px 0px 20px;
+padding: 16px 24px;
 
 background: var(--surface-color);
 border: 4px double var(--stroke-color);
 border-radius: 8px;
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
 text-decoration: none;
 font-weight: 500;
-transition: all 0.5s;
+transition: background 0.5s;
   
 }
 ul li a:hover {
@@ -151,22 +155,26 @@ ul li a:hover {
 }
 #logos {
  display: flex;
+justify-content: center;
+  font-size: 24px;
+  padding: 24px 0;
 
- gap: 50px;
-  font-size: 25px;
-  padding: 10px 10px 10px 35px;
-
-
+}
+#logos a {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 16px;
+transition: background 0.2s;
+border-radius: 50%;
 }
 footer {
+  padding: 24px 0;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   
 }
-ul {
-  
-  padding: 00px 00px 00px 00px;
-}
+
 
 @media (min-width: 700px) {
  :root {
@@ -176,5 +184,6 @@ ul {
  .Light {
   --bg-url:  url(./assets/bgdesktoplight.jpg);
  }
+
 
 }
