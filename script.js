@@ -84,7 +84,7 @@ links.setAttribute("href", "http://127.0.0.1:5500/assets/avatarblack.png")
    requestAnimationFrame(run)
  }
 
- run()
+ run() // valeu
 
 
 
