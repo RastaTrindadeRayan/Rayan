@@ -197,3 +197,41 @@ footer {
     left: 0%;
   }
 }
+
+
+.score{
+  position: fixed;
+  color: #fff;
+  background: #0090ff;
+  border-radius: 5px;
+  padding: 10px 30px;
+  top: 40px;
+  left: 1vw;
+  font-size: 15px;
+}
+
+.tv{
+ 
+}
+
+.player, .enemy{
+  width: 50px;
+  position: fixed;
+  height: 70px;
+  border-radius: 5px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.player{
+  background: #0090ff;
+  left: 50px;
+
+  transition: all 400ms;
+}
+
+.enemy {
+  background: #f00;
+  left: 100%;
+}
+
