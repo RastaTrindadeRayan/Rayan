@@ -232,3 +232,11 @@ footer {
   left: 100%;
 }
 
+.tv{
+  width: 90vw;
+  height: 60vh;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  position: relative;
+  overflow: hidden;
+}
