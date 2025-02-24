@@ -211,10 +211,18 @@ footer {
 }
 
 
-.player, .enemy{
+.player{
   width: 50px;
   position: fixed;
   height: 70px;
+  border-radius: 5px;
+  bottom: 10px;
+  overflow: hidden;
+}
+ .enemy{
+  width: 50px;
+  position: fixed;
+  height: 40px;
   border-radius: 5px;
   bottom: 10px;
   overflow: hidden;
